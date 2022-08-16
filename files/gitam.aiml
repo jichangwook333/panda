@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+<category>
+       <pattern>Hi ^</pattern>
+    <template>
+      <random>   
+        <li>Hola! May I known ur name?</li>
+        <li> Namaste!My name is Panda? What about you?</li>
+        <li> Hey Hi! May I known your sweet name?</li>
+     </random>    
+    </template>
+</category>
+<category>
+    <pattern>Hello ^</pattern>
+  <template>
+      <random>
+          <li>Bonjour! My name is panda. May I known your name please</li>
+          <li>Hi! Good to see you :)My name is panda. What about you?</li>
+      </random>        
+  </template>
+</category>
+<category>
+    <pattern>My name is *</pattern>
+    <template>Hello,<set name="name"> <star/>!</set> So nice to hear you!!! How was your day <star/> </template>
+</category>
+<category>
+    <pattern>It was fine.</pattern>
+    <pattern>good</pattern>
+    <pattern>great</pattern>
+    <template>Nice to hear that.Here are the things I can do for you to make your day still more better:)
+    <ul>
+          <li>About GITAM and its various campuses</li>
+          <li>About Administration and Accreditations </li>
+          <li>Academics</li>
+          <li>Admissions and fee structure</li>
+          <li>About hostel facilities</li>
+          <li>Placements</li>
+          <li>In campus</li>
+      </ul>
+    </template>
+  </category> 
+  <category>
+    <pattern>Tell me about gitam</pattern>
+    <template> Here you go.<br/>They are 3 campuses.
+    <ul>
+        <li>Visakapatanam campus.<br/>Established in 1980 as a main-campus of GITAM. Nestled in between the valley of Eastern Ghats and Bay of Bengal, the location is the most idyllic places in Andhra Pradesh.</li>
+        <li>Hyderabad Campus.<br/>Established in 2009 as an off-campus of GITAM. Since then the campus has grown into a well acclaimed hub of higher education in the state of Telangana.</li>
+        <li>Bangalore Campus.<br/>Established in 2012, with modern infrastructure supported by dedicated faculty and administrative staff. The campus is located in an ideal environment in Karnataka.</li>
+    </ul>
+    </template>
+</category>
+<category>
+    <pattern>administration ^</pattern>
+    <template>Here are the contact details of administration department
+    
+    <ol>
+        <li>Central Administrative Office (Visakhapatnam):0891-2840501 <br/> 
+        e-mail id: registrar@gitam.edu </li>
+        <li>Hyderabad campus: 08455-221200<br/> e-mail id:hydinfo@gitam.edu</li>
+        <li>Bengaluru campus: 080-28098000 / 07,9108514034, 9108514028, 8971199907<br/>
+        blrinfo@gitam.edu</li>
+        <li>you can find further more information here:</li>
+        <link>
+            <text>https://www.gitam.edu/administration#board-of-management</text>
+            <url>https://www.gitam.edu/administration#board-of-management</url>
+        </link>
+        <li>Accreditations: A+ graded by NAAC , AICTE Approved ,Recognised as
+        Number 1 category university and many more </li>
+        <li>you can find further more details here:</li>
+        <link>
+            <text>https://www.gitam.edu/accreditation</text>
+            <url>https://www.gitam.edu/accreditation</url>
+        </link>
+    </ol>
+    </template>
+</category>
+<category>
+    <pattern>Academics ^</pattern>
+    <template>Please tell which campus you wanted to known about
+    
+    <ul>
+        <li>Visakapatanam</li>
+        <li>Hyderabad</li>
+        <li>Bangalore</li>
+    </ul>
+    </template>
+</category>
+<category>
+    <pattern>Visakapatanam</pattern>
+    <template>Which Institute/School you want to known? Here is the list. Select which number you want <star/>
+    <ol>
+        <li>GITAM Institute of Technology</li>
+        <li>GITAM Institute of Science </li>
+        <li>GITAM Institute of Management</li>
+        <li>GITAM Institute of Pharmacy</li>
+        <li>GITAM School of Architecture Visakhapatnam </li>
+        <li>GITAM School of Law</li>
+        <li>GITAM Institute of Medical Sciences and Research</li>
+        <li>GITAM School of Gandhian Studies</li>
+        <li>GITAM INSTITUTE OF NURSING</li>
+    </ol>
+    </template>
+</category>
+<category>
+    <pattern>one</pattern>
+    <template>Here are the contact details:C. Dharma Raj, Professor, Principal:0891-2790202, 2840221. E-mail:principal_engineering@gitam.edu. For more details select which department you are intrested to known. Please type in that number
+    
+    <ol>
+        <li>Biotechnology</li>
+        <li>Computer science and engineering</li>
+        <li>Electrical ,Electronics and communication Engineering</li>
+        <li>Civil Engineering</li>
+        <li>Mechanical Engineering</li>
+    </ol>
+    </template>
+</category>
+<category>
+    <pattern>1</pattern>
+    <template>Here are the various programs under biotechnology:
+    
+    <ul>
+        <li>B. Tech. Biotechnology</li>
+        <li>M. Tech. Biotechnology</li>
+        <li>M. Tech. Food Processing Technology</li>
+        <li>Ph. D. (Full time) Biotechnology</li>
+        <li>Ph. D. (Part time) Biotechnology</li>
+    </ul>
+    Here is the contact details: S. Khasim Beebi, Professor-HOD, Chairperson, Board of Studies :0891-2840246,9347973429;E-mail Id: hod_biotech@gitam.edu
+    For further more details please go through this link:
+    <link>
+        <text>https://vspgitbiotech.gitam.edu/</text>
+        <url>https://vspgitbiotech.gitam.edu/</url>
+    </link>
+    </template>
+</category>
+<category>
+    <pattern>2</pattern>
+    <template>Here are the various programs offered:
+    <ul>
+        <li>B. Tech. Computer Science and Business System</li>
+        <li>B. Tech. Computer Science and Engineering</li>
+        <li>B. Tech. Computer Science and Engineering ( Artificial Intelligence and Machine Learning )</li>
+        <li>B. Tech. Computer Science and Engineering ( Cyber Security ) and many more UG programmes</li>
+        <li>M. Tech. Cyber Forensics and Information Security</li>
+        <li>M. Tech. Computer Science and Engineering and many more PG program and Research Programs</li>
+    </ul>
+    Here are the contact details: K. Thammi Reddy, Professor-HOD, Chairperson, Board of Studies : 0891-2840270 ; email id: hod_cse@gitam.edu
+    . For further more details please go through the link:
+    <link>
+        <text>https://vspgitcse.gitam.edu/</text>
+        <url>https://vspgitcse.gitam.edu/</url>
+    </link>
+    </template>
+</category>
+<category>
+    <pattern>3</pattern>
+    <template> Here are the various programs offered :
+    
+    <ul>
+        <li>Undergraduate programs <br/> B. Tech. Electronics and Communications Engineering<br/>
+B. Tech. Electrical and Electronics Engineering </li>
+       <li> Postgraduate programs <br/> M. Tech. Biomedical Signal Processing and Instrumentation<br/>
+M. Tech. Electronics Design and Technology<br/>
+M. Tech. Power System and Automation<br/>
+M. Tech. VLSI Design</li>
+        <li>Research programs <br/> Ph. D. (Full time) Electronics and Communication Engineering<br/>
+Ph. D. (Part time) Electronics and Communication Engineering<br/>
+Ph. D. (Part time) Electrical and Electronics Engineering<br/>
+Ph. D. (Full time) Electrical and Electronics Engineering</li>
+    </ul>
+    For further details please go through this link :
+    <link>
+        <text>https://vspgitece.gitam.edu/</text>
+        <url>https://vspgitece.gitam.edu/</url>
+    </link>
+   Here are the contact details: P. V. Y. Jayasree , Professor-HOD, Chairperson, Board of Studies : 0891-2840230,9849702033. E-mail id:hod_ece@gitam.edu </template>
+</category>
+<category>
+    <pattern>4</pattern>
+    <template>Here are the various programs offered:
+     <ul>
+        <li>Undergraduate programs: B. Tech. Civil Engineering</li>
+        <li>Postgraduate programs: M. Tech. Structural Engineering many more</li>
+        <li>Research programs: Ph. D. (Full time) Civil Engineering many more</li>
+    </ul>
+    Here is the contact info : K. Venkata Ramesh , Professor-HOD, Chairperson, Board of Studies : 0891-2840260; email-hod_civil@gitam.edu.
+    For further details go through this link:
+    <link>
+        <text>https://vspgitcivil.gitam.edu/</text>
+        <url>https://vspgitcivil.gitam.edu/</url>
+    </link>
+    </template>
+</category>
+<category>
+    <pattern>5</pattern>
+    <template>Here are the various programs offered :
+    <ul>
+        <li>Undergraduate programs: B. Tech. Mechanical Engineering</li>
+        <li>Postgraduate programs:M. Tech. CAD / CAM and many more </li>
+        <li>Research programs: Ph. D. (Part time) Mechanical Engineering and many more</li>
+    </ul>
+    Here are the contact details : Munukurthi Rama Surya Satyanarayana, Professor-HOD : 0891-2840250, email:hod_mech@gitam.edu
+    For further more details please go through the link:
+    <link>
+        <text>https://vspgitmech.gitam.edu/</text>
+        <url>https://vspgitmech.gitam.edu/</url>
+    </link>
+    </template>
+</category>
+<category>
+    <pattern>I wanted to go back to departments</pattern>
+    <template>Here you go!! Please type in that number
+    
+    <ol>
+        <li>Biotechnology</li>
+        <li>Computer science and engineering</li>
+        <li>Electrical ,Electronics and communication Engineering</li>
+        <li>Civil Engineering</li>
+        <li>Mechanical Engineering</li>
+    </ol>
+    </template>
+</category>
+<category>
+    <pattern> I want to get back to institutes names ^</pattern>
+    <template>Which Institute/School you want to known? Here is the list. Select which number you want
+     <ol>
+        <li>GITAM Institute of Technology</li>
+        <li>GITAM Institute of Science </li>
+        <li>GITAM Institute of Management</li>
+        <li>GITAM Institute of Pharmacy</li>
+        <li>GITAM School of Architecture Visakhapatnam </li>
+        <li>GITAM School of Law</li>
+        <li>GITAM Institute of Medical Sciences and Research</li>
+        <li>GITAM School of Gandhian Studies</li>
+        <li>GITAM INSTITUTE OF NURSING</li>
+    </ol>
+    </template>
+</category>
+<category>
+    <pattern>I want to select another campus ^</pattern>
+    <template>Please tell which campus you wanted to known about. Please type in....
+    <ul>
+        <li>Visakapatanam</li>
+        <li>Hyderabad</li>
+        <li>Bangalore</li>
+    </ul>
+    </template>
+</category>
+<category>
+    <pattern>I wanted to begin again</pattern>
+    <pattern>I wanted to go to first search</pattern>
+    <template>Ya no problem !! Anything for you!!!Here are the things I can do for you to make your day still more better:)Please type in what you want to known...
+    <ul>
+          <li>About GITAM and its various campuses</li>
+          <li>About Administration and Accreditations </li>
+          <li>Academics</li>
+          <li>Admissions and fee structure</li>
+          <li>About hostel facilities</li>
+          <li>Placements</li>
+          <li>In campus</li>
+          </ul>
+          </template>
+</category>
+<category>
+    <pattern>Admissions ^</pattern>
+    <template>GAT Is the entrance examination for Gitam <br/> For further details contact:8880884000<br/> emial:GAT@GITAM.EDU.
+    for Further more information please go through the link:
+     <link>
+        <text>https://www.gitam.edu/admissions</text>
+        <url>https://www.gitam.edu/admissions</url>
+    </link>
+    </template>
+</category>
+<category>
+    <pattern>Fee ^</pattern>
+    <template>
+        <get name="name"/>you can find complete information from the link given below:
+        <link>
+            <text> https://www.gitam.edu/fee-structure</text>
+            <url>https://www.gitam.edu/fee-structure</url>
+        </link>
+    </template>
+</category>
+<category>
+    <pattern>hostel ^</pattern>
+    <template>We have 5 boys hostels and 3 girls hostels in Visakapatanam Campus <br/> We have 2 blocks for boys and 2 blocks for girls in Hyderabad Campus.<br/> We have 1 boys hostel and 1 girls hostel in Bangalore Campus.
+    .For contact details or any other futher details please go through this link
+    <link>
+        <text>https://www.gitam.edu/student-housing-vsp</text>
+        <url>https://www.gitam.edu/student-housing-vsp</url>
+    </link>
+    </template>
+</category>
+<category>
+    <pattern>Placements ^</pattern>
+    <template>Our institute every year welcomes 100+ MNC's and Corporations <br/> 30,000+ Alumni across the globe<br/> 35+ Startups from GITAM students<br/> 30,000+ Students placed
+    . For further more information regarding Placements please check out this link
+    <link>
+        <text>https://www.gitam.edu/placements</text>
+        <url>https://www.gitam.edu/placements</url>
+    </link>
+    </template>
+</category>
+<category>
+    <pattern>In campuse</pattern>
+    <template>Our 3 campuses have many number of student clubs and student chapters like:
+    
+    <ul>
+        <li>Institution of Electronics and Telecommunication Engineering (IETE)</li>
+        <li>Institute of Electronics and Electrical Engineers (IEEE)</li>
+        <li>Computer Society of India (CSI)</li>
+        <li>Engineers Without Borders (EWB)</li>
+        <li>Clubs like:GUSAC</li>
+        <li>GCIED</li>
+        <li>Rotaract Club of GITAM (RACG)</li>
+        <li>Kalakrithi</li>
+        <li>G-Studio</li>
+        <li>National Cadet Corps</li>
+        <li>GITAM National Service Scheme and many more...</li>
+    </ul>
+    To known more about our student clubs and student chapters please check out this link :
+    <link>
+        <text>https://www.gitam.edu/in-campus</text>
+        <url>https://www.gitam.edu/in-campus</url>
+    </link>
+    </template>
+</category>
+<category>
+    <pattern>Thank you ^</pattern>
+    <template>Never mind. This is my job. This panda is always ready to answer all your questions...
+    For complete information about GITAM please visit the following website
+    <link>
+        <text>https://www.gitam.edu/</text>
+        <url>https://www.gitam.edu/</url>
+    </link>
+    </template>
+</category>
+<category>
+    <pattern>Bye</pattern>
+    <template>It was so nice to chat with you <get name="name"/>. I hope you will visit me again!!! Have a great day!! Bye:)</template>
+</category>
+</aiml>
